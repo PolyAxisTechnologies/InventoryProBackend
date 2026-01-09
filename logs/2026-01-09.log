@@ -13,3 +13,53 @@
 2026-01-09 15:51:38 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes
 2026-01-09 15:51:38 - inventory_app - INFO - qualities.py:27 - Retrieved 0 qualities
 2026-01-09 15:51:38 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes
+2026-01-09 15:52:26 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:52:26 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-09 15:52:26 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:52:26 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:52:26 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-09 15:52:26 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:52:31 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:52:31 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:52:33 - inventory_app - INFO - qualities.py:27 - Retrieved 2 qualities
+2026-01-09 15:52:33 - inventory_app - INFO - qualities.py:27 - Retrieved 2 qualities
+2026-01-09 15:52:33 - inventory_app - INFO - sizes.py:27 - Retrieved 2 sizes
+2026-01-09 15:52:33 - inventory_app - INFO - sizes.py:27 - Retrieved 2 sizes
+2026-01-09 15:55:35 - inventory_app - INFO - sizes.py:27 - Retrieved 2 sizes
+2026-01-09 15:55:35 - inventory_app - INFO - qualities.py:27 - Retrieved 2 qualities
+2026-01-09 15:55:35 - inventory_app - INFO - sizes.py:27 - Retrieved 2 sizes
+2026-01-09 15:55:35 - inventory_app - INFO - qualities.py:27 - Retrieved 2 qualities
+2026-01-09 15:56:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:56:36 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:56:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:56:36 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:57:22 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:22 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:23 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:23 - inventory_app - INFO - suppliers.py:19 - Retrieved 3 suppliers
+2026-01-09 15:57:23 - inventory_app - INFO - suppliers.py:19 - Retrieved 3 suppliers
+2026-01-09 15:57:23 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:25 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:25 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:27 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 15:57:27 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 15:57:32 - inventory_app - INFO - purchases.py:36 - Retrieved 6 purchases
+2026-01-09 15:57:32 - inventory_app - INFO - purchases.py:36 - Retrieved 6 purchases
+2026-01-09 15:57:37 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-09 15:57:37 - inventory_app - INFO - purchases.py:36 - Retrieved 6 purchases
+2026-01-09 15:57:37 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 15:57:37 - inventory_app - INFO - purchases.py:36 - Retrieved 6 purchases
+2026-01-09 15:57:37 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-09 15:57:37 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 15:57:37 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:57:37 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:57:40 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:40 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:40 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:57:40 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-09 15:57:48 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:48 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:49 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:49 - inventory_app - INFO - suppliers.py:19 - Retrieved 3 suppliers
+2026-01-09 15:57:49 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:57:49 - inventory_app - INFO - suppliers.py:19 - Retrieved 3 suppliers
