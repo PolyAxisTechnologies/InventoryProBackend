@@ -11,8 +11,11 @@ router = APIRouter()
 logger = get_logger()
 
 
+from sqlalchemy import or_
+
 @router.get("/", response_model=List[ItemSchema])
 def get_items(
+    search: Optional[str] = None,
     category_id: Optional[int] = None,
     quality_id: Optional[int] = None,
     size_id: Optional[int] = None,
@@ -21,14 +24,26 @@ def get_items(
     limit: int = 100,
     db: Session = Depends(get_db)
 ):
-    """Get all items with optional filters"""
+    """Get all items with optional filters and search"""
     try:
-        query = db.query(Item).options(
+        query = db.query(Item).join(Item.category).join(Item.quality).join(Item.size).options(
             joinedload(Item.category),
             joinedload(Item.quality),
             joinedload(Item.size)
         )
         
+        if search:
+            search_term = f"%{search}%"
+            query = query.filter(
+                or_(
+                    Item.sku.ilike(search_term),
+                    Category.name.ilike(search_term),
+                    Quality.name.ilike(search_term),
+                    Size.size_display.ilike(search_term),
+                    Size.size_value.ilike(search_term)
+                )
+            )
+
         if category_id:
             query = query.filter(Item.category_id == category_id)
         if quality_id:

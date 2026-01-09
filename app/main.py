@@ -67,8 +67,8 @@ app.include_router(invoices.router, prefix="/api", tags=["invoices"])
 app.include_router(settings.router, prefix="/api/settings", tags=["settings"])
 
 # TODO: Add remaining routers
-# from app.routers import reports, audit
-# app.include_router(reports.router, prefix="/api/reports", tags=["reports"])
-# app.include_router(audit.router, prefix="/api/audit-logs", tags=["audit"])
+from app.routers import audit # reports, audit
+# # app.include_router(reports.router, prefix="/api/reports", tags=["reports"])
+app.include_router(audit.router, prefix="/api/audit-logs", tags=["audit"])
 
 
