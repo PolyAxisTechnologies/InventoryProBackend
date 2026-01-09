@@ -3,6 +3,29 @@ from typing import Optional
 from datetime import datetime
 
 
+# Nested schemas for relationships
+class CategoryNested(BaseModel):
+    id: int
+    name: str
+    
+    model_config = ConfigDict(from_attributes=True)
+
+
+class QualityNested(BaseModel):
+    id: int
+    name: str
+    
+    model_config = ConfigDict(from_attributes=True)
+
+
+class SizeNested(BaseModel):
+    id: int
+    size_value: str
+    size_display: str
+    
+    model_config = ConfigDict(from_attributes=True)
+
+
 # Item Schemas
 class ItemBase(BaseModel):
     category_id: int
@@ -37,6 +60,9 @@ class Item(ItemBase):
     id: int
     created_at: datetime
     updated_at: datetime
+    category: Optional[CategoryNested] = None
+    quality: Optional[QualityNested] = None
+    size: Optional[SizeNested] = None
 
     model_config = ConfigDict(from_attributes=True)
 

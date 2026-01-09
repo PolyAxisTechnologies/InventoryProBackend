@@ -1,0 +1,10 @@
+2026-01-07 19:44:10 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-07 19:44:10 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-07 19:44:10 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-07 19:44:10 - inventory_app - INFO - items.py:98 - Found 3 low stock items
+2026-01-07 19:44:10 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-07 19:44:10 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-07 19:44:30 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-07 19:44:30 - inventory_app - INFO - items.py:42 - Retrieved 59 items
+2026-01-07 19:44:30 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-07 19:44:30 - inventory_app - INFO - items.py:42 - Retrieved 59 items

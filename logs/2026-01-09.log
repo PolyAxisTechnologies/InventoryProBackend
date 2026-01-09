@@ -1,0 +1,15 @@
+2026-01-09 15:51:07 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 15:51:07 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 15:51:07 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 15:51:12 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:51:12 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:51:15 - inventory_app - INFO - qualities.py:27 - Retrieved 0 qualities
+2026-01-09 15:51:15 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes
+2026-01-09 15:51:15 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes
+2026-01-09 15:51:15 - inventory_app - INFO - qualities.py:27 - Retrieved 0 qualities
+2026-01-09 15:51:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:51:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 15:51:38 - inventory_app - INFO - qualities.py:27 - Retrieved 0 qualities
+2026-01-09 15:51:38 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes
+2026-01-09 15:51:38 - inventory_app - INFO - qualities.py:27 - Retrieved 0 qualities
+2026-01-09 15:51:38 - inventory_app - INFO - sizes.py:27 - Retrieved 0 sizes

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 from typing import List, Optional
 from app.database import get_db
 from app.models.models import Item, Category, Quality, Size
@@ -23,7 +23,11 @@ def get_items(
 ):
     """Get all items with optional filters"""
     try:
-        query = db.query(Item)
+        query = db.query(Item).options(
+            joinedload(Item.category),
+            joinedload(Item.quality),
+            joinedload(Item.size)
+        )
         
         if category_id:
             query = query.filter(Item.category_id == category_id)
@@ -86,7 +90,11 @@ def get_items_table(category_id: int, db: Session = Depends(get_db)):
 def get_low_stock_items(db: Session = Depends(get_db)):
     """Get all items with stock below threshold"""
     try:
-        items = db.query(Item).filter(Item.stock_quantity <= Item.low_stock_threshold).all()
+        items = db.query(Item).options(
+            joinedload(Item.category),
+            joinedload(Item.quality),
+            joinedload(Item.size)
+        ).filter(Item.stock_quantity <= Item.low_stock_threshold).all()
         logger.info(f"Found {len(items)} low stock items")
         return items
     except Exception as e:
