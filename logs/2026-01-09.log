@@ -281,3 +281,103 @@
 2026-01-09 20:39:34 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
 2026-01-09 20:39:39 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
 2026-01-09 20:39:47 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:36 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:00:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:36 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:00:36 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:36 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:36 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:38 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:38 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:42 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:42 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:00:42 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:42 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:50 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:00:50 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:00:52 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:52 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:53 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:00:53 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:00:53 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:53 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:53 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:00:53 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:53 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:00:53 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:00:55 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:55 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:00:57 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:00:57 - inventory_app - INFO - sales.py:33 - Retrieved 4 sales
+2026-01-09 21:02:25 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:02:25 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:02:25 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:02:25 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:02:25 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:02:25 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:02:41 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:03:15 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:03:15 - inventory_app - INFO - items.py:57 - Retrieved 25 items
+2026-01-09 21:03:43 - inventory_app - INFO - audit_logger.py:53 - Audit log created: UPDATE on items (ID: 1)
+2026-01-09 21:03:43 - inventory_app - INFO - audit_logger.py:53 - Audit log created: UPDATE on items (ID: 27)
+2026-01-09 21:03:43 - inventory_app - INFO - audit_logger.py:53 - Audit log created: INSERT on sales (ID: 5)
+2026-01-09 21:03:43 - inventory_app - INFO - sales.py:137 - Created sale ID: 5, Total: ₹449.97
+2026-01-09 21:06:07 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:06:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:06:07 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:06:07 - inventory_app - INFO - items.py:113 - Found 3 low stock items
+2026-01-09 21:06:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-09 21:06:07 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:06:19 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:06:19 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:08:22 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:08:24 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:08:25 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:08:25 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:08:25 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:08:26 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:08:27 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:08:27 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:08:34 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:08:34 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:09:05 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:05 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:13 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:13 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:19 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:09:19 - inventory_app - INFO - purchases.py:36 - Retrieved 7 purchases
+2026-01-09 21:09:24 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:24 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:09:56 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:11:07 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:11:09 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:11:09 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:11:09 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:11:18 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:11:20 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:11:21 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:11:21 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:11:21 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:11:21 - inventory_app - INFO - sales.py:33 - Retrieved 5 sales
+2026-01-09 21:13:20 - inventory_app - INFO - items.py:57 - Retrieved 59 items
+2026-01-09 21:13:39 - inventory_app - INFO - audit_logger.py:53 - Audit log created: UPDATE on items (ID: 1)
+2026-01-09 21:13:39 - inventory_app - INFO - audit_logger.py:53 - Audit log created: INSERT on sales (ID: 6)
+2026-01-09 21:13:39 - inventory_app - INFO - sales.py:137 - Created sale ID: 6, Total: ₹3000.00
+2026-01-09 21:13:41 - inventory_app - INFO - sales.py:33 - Retrieved 6 sales
+2026-01-09 21:13:41 - inventory_app - INFO - sales.py:33 - Retrieved 6 sales
+2026-01-09 21:14:04 - inventory_app - INFO - sales.py:33 - Retrieved 6 sales
+2026-01-09 21:14:04 - inventory_app - INFO - sales.py:33 - Retrieved 6 sales
+2026-01-09 21:15:49 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:15:50 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:15:56 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:15:56 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:15:56 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:15:57 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:15:58 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:15:59 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:15:59 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:15:59 - inventory_app - INFO - main.py:40 - Application shutting down...
+2026-01-09 21:16:01 - inventory_app - INFO - main.py:15 - Database tables created successfully
+2026-01-09 21:16:01 - inventory_app - INFO - main.py:35 - Application starting up...
+2026-01-09 21:16:01 - inventory_app - INFO - main.py:36 - Database URL: sqlite:///./inventory.db
+2026-01-09 21:18:29 - inventory_app - INFO - main.py:40 - Application shutting down...

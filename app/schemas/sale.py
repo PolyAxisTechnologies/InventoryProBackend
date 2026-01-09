@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional, List
 from datetime import datetime
-
+from app.schemas.item import Item
 
 # Sale Item Schemas
 class SaleItemBase(BaseModel):
@@ -20,6 +20,7 @@ class SaleItem(SaleItemBase):
     sale_id: int
     line_total: float
     created_at: datetime
+    item: Optional[Item] = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -45,9 +46,10 @@ class Sale(SaleBase):
     gst_amount: float
     total_amount: float
     created_at: datetime
+    items: List[SaleItem] = Field(default=[], validation_alias="sale_items")
 
     model_config = ConfigDict(from_attributes=True)
 
 
 class SaleDetail(Sale):
-    items: List[SaleItem] = []
+    pass

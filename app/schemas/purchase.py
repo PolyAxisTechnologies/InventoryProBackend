@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional, List
 from datetime import datetime
-
+from app.schemas.item import Item
 
 # Supplier Schemas
 class SupplierBase(BaseModel):
@@ -47,6 +47,7 @@ class PurchaseItem(PurchaseItemBase):
     id: int
     purchase_id: int
     created_at: datetime
+    item: Optional[Item] = None
 
     model_config = ConfigDict(from_attributes=True)
 
@@ -74,10 +75,11 @@ class Purchase(PurchaseBase):
     id: int
     total_amount: float
     created_at: datetime
+    supplier: Optional[Supplier] = None
+    items: List[PurchaseItem] = Field(default=[], validation_alias="purchase_items")
 
     model_config = ConfigDict(from_attributes=True)
 
 
 class PurchaseDetail(Purchase):
-    items: List[PurchaseItem] = []
-    supplier_name: Optional[str] = None
+    pass

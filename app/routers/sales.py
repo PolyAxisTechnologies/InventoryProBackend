@@ -5,6 +5,7 @@ from datetime import datetime
 from app.database import get_db
 from app.models.models import Sale, SaleItem, Item
 from app.schemas.sale import SaleCreate, SaleUpdate, Sale as SaleSchema, SaleDetail
+from app.schemas.common import PaginatedResponse
 from app.utils.audit_logger import log_operation
 from app.utils.logger_config import get_logger
 
@@ -12,26 +13,39 @@ router = APIRouter()
 logger = get_logger()
 
 
-@router.get("/", response_model=List[SaleSchema])
+@router.get("/", response_model=PaginatedResponse[SaleSchema])
 def get_sales(
     start_date: Optional[datetime] = None,
     end_date: Optional[datetime] = None,
-    skip: int = 0,
-    limit: int = 100,
+    page: int = 1,
+    limit: int = 20,
     db: Session = Depends(get_db)
 ):
-    """Get all sales with optional date filters"""
+    """Get all sales with optional date filters and pagination"""
     try:
         query = db.query(Sale)
         
         if start_date:
             query = query.filter(Sale.sale_date >= start_date)
         if end_date:
-            query = query.filter(Sale.sale_date <= end_date)
+            # If explicit time not provided, assume end of day for end_date
+            # But the frontend usually sends specific times or dates. 
+            # If standard date string, simple comparison might look for strict <=.
+             query = query.filter(Sale.sale_date <= end_date)
         
+        # Calculate total before pagination
+        total = query.count()
+        
+        # Apply pagination
+        skip = (page - 1) * limit
         sales = query.order_by(Sale.sale_date.desc()).offset(skip).limit(limit).all()
-        logger.info(f"Retrieved {len(sales)} sales")
-        return sales
+        
+        return {
+            "items": sales,
+            "total": total,
+            "page": page,
+            "limit": limit
+        }
     except Exception as e:
         logger.error(f"Error retrieving sales: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

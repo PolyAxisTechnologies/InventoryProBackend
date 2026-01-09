@@ -5,6 +5,7 @@ from datetime import datetime
 from app.database import get_db
 from app.models.models import Purchase, PurchaseItem, Item
 from app.schemas.purchase import PurchaseCreate, PurchaseUpdate, Purchase as PurchaseSchema, PurchaseDetail
+from app.schemas.common import PaginatedResponse
 from app.utils.audit_logger import log_operation
 from app.utils.logger_config import get_logger
 
@@ -12,16 +13,16 @@ router = APIRouter()
 logger = get_logger()
 
 
-@router.get("/", response_model=List[PurchaseSchema])
+@router.get("/", response_model=PaginatedResponse[PurchaseSchema])
 def get_purchases(
     supplier_id: Optional[int] = None,
     start_date: Optional[datetime] = None,
     end_date: Optional[datetime] = None,
-    skip: int = 0,
-    limit: int = 100,
+    page: int = 1,
+    limit: int = 20,
     db: Session = Depends(get_db)
 ):
-    """Get all purchases with optional filters"""
+    """Get all purchases with optional filters and pagination"""
     try:
         query = db.query(Purchase)
         
@@ -32,9 +33,19 @@ def get_purchases(
         if end_date:
             query = query.filter(Purchase.purchase_date <= end_date)
         
+        # Calculate total
+        total = query.count()
+        
+        # Apply pagination
+        skip = (page - 1) * limit
         purchases = query.order_by(Purchase.purchase_date.desc()).offset(skip).limit(limit).all()
-        logger.info(f"Retrieved {len(purchases)} purchases")
-        return purchases
+        
+        return {
+            "items": purchases,
+            "total": total,
+            "page": page,
+            "limit": limit
+        }
     except Exception as e:
         logger.error(f"Error retrieving purchases: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
