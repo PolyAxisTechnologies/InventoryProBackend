@@ -71,4 +71,7 @@ from app.routers import audit # reports, audit
 # # app.include_router(reports.router, prefix="/api/reports", tags=["reports"])
 app.include_router(audit.router, prefix="/api/audit-logs", tags=["audit"])
 
+from app.routers import license
+app.include_router(license.router, prefix="/api/license", tags=["license"])
+
 
