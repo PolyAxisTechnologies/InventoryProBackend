@@ -196,3 +196,77 @@
 2026-01-14 17:12:22 - inventory_app - INFO - audit_logger.py:53 - Audit log created: INSERT on items (ID: 61)
 2026-01-14 17:12:22 - inventory_app - INFO - items.py:339 - Created item: NUT-GI (Galvanized Iron)-30 mm (ID: 61)
 2026-01-14 17:12:22 - inventory_app - INFO - items.py:103 - Retrieved 26 items (page 1, total 26)
+2026-01-14 17:13:11 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:13:11 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:13:11 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 61)
+2026-01-14 17:13:11 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:13:11 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:13:11 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 61)
+2026-01-14 17:13:41 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:13:41 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 61)
+2026-01-14 17:13:41 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:13:41 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 61)
+2026-01-14 17:13:43 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:14:20 - inventory_app - INFO - audit_logger.py:53 - Audit log created: INSERT on items (ID: 62)
+2026-01-14 17:14:20 - inventory_app - INFO - items.py:339 - Created item: NUT-GI (Galvanized Iron)-20mm (ID: 62)
+2026-01-14 17:14:27 - inventory_app - INFO - audit_logger.py:53 - Audit log created: UPDATE on items (ID: 62)
+2026-01-14 17:14:27 - inventory_app - INFO - items.py:430 - Updated item: NUT-GI (Galvanized Iron)-20mm (ID: 62)
+2026-01-14 17:14:32 - inventory_app - INFO - audit_logger.py:53 - Audit log created: INSERT on items (ID: 63)
+2026-01-14 17:14:32 - inventory_app - INFO - items.py:339 - Created item: NUT-GI (Galvanized Iron)-25mm (ID: 63)
+2026-01-14 17:14:41 - inventory_app - INFO - audit_logger.py:53 - Audit log created: UPDATE on items (ID: 63)
+2026-01-14 17:14:41 - inventory_app - INFO - items.py:430 - Updated item: NUT-GI (Galvanized Iron)-25mm (ID: 63)
+2026-01-14 17:14:57 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:04 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:16:04 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:04 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:04 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:04 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:16:04 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:05 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:05 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:05 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:05 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:06 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:16:06 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:06 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:06 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:06 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:16:06 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:07 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:07 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:16:40 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:16:51 - inventory_app - INFO - sizes.py:27 - Retrieved 9 sizes
+2026-01-14 17:16:51 - inventory_app - INFO - qualities.py:27 - Retrieved 6 qualities
+2026-01-14 17:18:07 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:18:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:07 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:18:07 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:07 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:18:07 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:18:19 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:19 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:18:19 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:19 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:18:20 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:22 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:50 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:18:50 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:50 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:18:50 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:18:50 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:18:50 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:20:20 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:20:20 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:20:20 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:20:20 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:20:20 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:20:20 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:20:26 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:20:31 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:20:31 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
+2026-01-14 17:20:31 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:20:31 - inventory_app - INFO - items.py:306 - Found 6 low stock items
+2026-01-14 17:20:31 - inventory_app - INFO - categories.py:23 - Retrieved 5 categories
+2026-01-14 17:20:31 - inventory_app - INFO - items.py:103 - Retrieved 50 items (page 1, total 63)
