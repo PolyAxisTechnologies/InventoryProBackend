@@ -3,10 +3,20 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
 import os
+import sys
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./inventory.db")
+# Determine DB Path
+if getattr(sys, 'frozen', False):
+    # Production / Frozen
+    APP_DATA_DIR = os.path.join(os.getenv('APPDATA'), 'InventoryPro')
+    os.makedirs(APP_DATA_DIR, exist_ok=True)
+    db_path = os.path.join(APP_DATA_DIR, 'inventory.db')
+    DATABASE_URL = f"sqlite:///{db_path}"
+else:
+    # Development
+    DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./inventory.db")
 
 engine = create_engine(
     DATABASE_URL,

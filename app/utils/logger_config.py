@@ -4,7 +4,17 @@ from datetime import datetime
 from logging.handlers import TimedRotatingFileHandler
 
 # Create logs directory if it doesn't exist
-LOGS_DIR = "logs"
+import sys
+
+# Create logs directory if it doesn't exist
+if getattr(sys, 'frozen', False):
+    # If running as bundled app, store logs in AppData
+    app_data = os.getenv('APPDATA')
+    LOGS_DIR = os.path.join(app_data, "InventoryPro", "logs")
+else:
+    # If running in dev, store in local logs folder
+    LOGS_DIR = "logs"
+
 if not os.path.exists(LOGS_DIR):
     os.makedirs(LOGS_DIR)
 

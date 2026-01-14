@@ -6,13 +6,20 @@ import hashlib
 from datetime import datetime
 import threading
 
-LICENSE_FILE = "license.dat"
-AUDIT_FILE = "system_audit.dat"  # For clock protection
+# Define App Data Path
+APP_DATA_DIR = os.path.join(os.getenv('APPDATA'), 'InventoryPro')
+os.makedirs(APP_DATA_DIR, exist_ok=True)
+
+LICENSE_FILE = os.path.join(APP_DATA_DIR, "license.dat")
+AUDIT_FILE = os.path.join(APP_DATA_DIR, "system_audit.dat")
 
 class LicenseManager:
     def __init__(self):
-        self.secret_key = os.getenv("LICENSE_SECRET_KEY", "default_insecure_key")
         self._lock = threading.Lock()
+
+    @property
+    def secret_key(self):
+        return os.getenv("LICENSE_SECRET_KEY", "default_insecure_key")
 
     def _get_signature(self, b64_payload: str) -> str:
         return hmac.new(
